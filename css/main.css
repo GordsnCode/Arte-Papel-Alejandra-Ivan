@@ -23,7 +23,7 @@ html{
 }
 
 body{
-    background: url(../img/textura.jpg);
+    background: url(/Image/textura.jpg);
     background-size:contain;
     background-position: center center;
     background-attachment:scroll;
