@@ -1,0 +1,442 @@
+@font-face{
+    font-family: BODONI BK BT BOOK I;
+    src: url(/fonts/BODONI\ BK\ BT\ BOOK\ ITALIC.TTF);
+}
+
+@font-face{
+    font-family: CHOCOLAT;
+    src: url(/fonts/CHOCOLATE.TTF);
+}
+@font-face {
+    font-family: BODINI BK BT BOOK;
+    src: url(/fonts/BODONI\ BK\ BT\ BOOK.TTF);
+}
+
+/*GLOBALES*/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: url(/img/textura.jpg);
+    background-size:contain;
+    background-position: center center;
+    background-attachment:scroll;
+    background-repeat:repeat-y;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/*ESTILOS*/
+
+.flor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flor1 img{
+    height: 14rem;
+}
+@media (min-width: 768px){
+    .flor1 img{
+        height: 25rem;
+    }
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+}
+.intro img{
+    width: rem;
+}
+
+@media (min-width: 768px){
+    
+    .intro{
+        margin-top: -3rem;
+        margin-bottom: 5rem;
+    }
+    .intro img{
+        height: 35rem;
+    }
+}
+
+.save{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.save img{
+    width: 14rem;
+}
+
+@media (min-width: 768px){
+    
+    .save{
+        margin-bottom: 5rem;
+    }
+    .save img{
+        width: 25rem;
+    }
+}
+
+.navegacion{
+    font-size: 2.5rem;
+    font-family: BODONI BK BT BOOK;
+    margin-bottom: 2.5rem;      
+}
+
+.navegacion a{
+    color: rgba(112, 111, 111, 1);
+    text-transform: uppercase;
+    text-decoration: none ;
+    text-align: center;
+    display: block;
+}
+@media (min-width: 768px){
+    .navegacion {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .navegacion a{
+        display: inline-block; 
+    }
+}
+
+.navegacion a:hover{
+    color: black;
+}
+
+.flor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flor2 img{
+    height: 15rem;
+}
+
+@media (min-width: 768px){
+    .flor2 {
+        margin-top: 2rem;
+    }
+    .flor2 img{
+        height: 30rem;
+    }
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+}
+.info img{
+    height: 75rem;
+}
+
+@media (min-width: 768px){
+    .info {
+        display: flex;
+        justify-content: center;
+        margin-top: -5rem;
+    }
+    .info img{
+        height: 100rem;
+    }
+}
+
+.flor3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4.5rem;
+    margin-bottom: -2.5rem;
+}
+
+.flor3 img{
+    width: 44rem;
+}
+
+@media (min-width: 768px){
+    .flor3 {
+        margin-top: -9rem;
+    }
+    .flor3 img{
+        width: 85rem;
+    }
+}
+.separador{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.contubi{
+    display:flexbox; 
+}
+.flor4{
+    display: flex;
+    justify-content: start;
+    margin-top: 1.5rem;
+}
+
+.flor4 img{
+    width: 20rem;
+    transform: rotate(-25deg);
+}
+@media (min-width: 768px){
+    .flor4 img{
+        width: 40rem;
+    }
+}
+
+.ubitext{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.ubitext img{
+    width: 18rem;
+}
+
+@media (min-width: 768px){
+    .ubitext {
+        margin-top: -10rem;
+        margin-bottom: 5rem;
+    }
+    .ubitext img{
+        width: 40rem;
+    }
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;  
+}
+
+.dibtn {
+    border: none;
+    padding: 16px 32px;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 25rem;
+    font-family: BODONI BK BT BOOK; 
+    display: block;
+    flex: 0 0 100%;
+}
+@media (min-width:768px){
+    .dibtn{
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.dibtn {
+    text-decoration: none;
+    font-size: 2.2rem;
+    text-align: center;
+    color: rgba(112, 111, 111, 1);
+    width: 25rem;
+}
+
+@media (min-width: 768px){
+    .dibtn {
+        font-size: 3rem;
+    }
+}
+
+.dibtn a{
+    width: 20rem;
+}
+.btnefe {
+    background-color: transparent;
+    color: rgba(112, 111, 111, 1);
+    border: 2px solid rgba(112, 111, 111, 1);
+  }
+  
+  .btnefe:hover {
+    background-color: rgba(112, 111, 111, 1);
+    color: white;
+  }
+
+.ubi-img{
+    display: flex;
+    justify-content: center;
+}
+.ubi-img img{
+    width: 80rem;
+}
+.flor5{
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+}
+
+.flor5 img{
+    width: 20rem;
+    transform: rotate(-205deg);
+}
+
+@media (min-width: 768px){
+    .flor5 img{
+        width: 40rem;
+    }
+}
+
+.flor6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: -2.5rem;
+}
+
+.flor6 img{
+    width: 44rem;
+}
+
+@media (min-width: 768px){
+    .flor6 {
+        margin-top: 5rem;
+    }
+    .flor6 img{
+        width: 85rem;
+    }
+}
+.mesatext{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem
+}
+.mesatext img{
+    width: 50rem;
+}
+
+@media (min-width: 768px){
+    .mesatext {
+        margin-bottom: 5rem;
+    }
+    .mesatext img{
+        width: 80rem;
+    }
+}
+
+.flor8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.5rem;
+}
+
+.flor8 img{
+    width: 15rem;
+}
+
+@media (min-width: 768px){
+    .flor8 {
+        margin-top: 5rem;
+    }
+    .flor8 img{
+        width: 30rem;
+    }
+}
+.efectivotext{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.efectivotext img{
+    width: 30rem;
+}
+
+@media (min-width: 768px){
+    .efectivotext {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .efectivotext img{
+        width: 58rem;
+    }
+}
+
+.dressctext{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+.dressctext img{
+    width: 33rem;
+}
+
+@media (min-width: 768px){
+    .dressctext {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .dressctext img{
+        width: 58rem;
+    }
+}
+.logos{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px){
+    .logos {
+        align-items: center;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+}
+.logoJan{
+    width: 7.5rem;
+    margin-right: 2.5rem;
+}
+@media (min-width: 768px){
+    .logoJan {
+        width: 7.5rem;
+    }
+}
+.logoGor{
+    width: 5rem;
+    margin-left: 2.5rem;
+    opacity: 50%;
+}
+
+.textfooter{
+    justify-content: center;
+    align-items: center;
+    font-family: BODONI BK BT BOOK I;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.textfooter p{
+    line-height: 0.5;
+}
